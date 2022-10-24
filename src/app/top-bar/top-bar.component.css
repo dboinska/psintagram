@@ -1,0 +1,8 @@
+select {
+  background-color: var(--color-dark);
+  color: var(--color-blue);
+  border: none;
+  font-size: 1rem;
+  text-transform: capitalize;
+  min-width: 160px;
+}

@@ -1,0 +1,14 @@
+<h1>Psintagram.</h1>
+
+<div class="select">
+  <select #breed>
+    <option value="none" selected disabled hidden>Wybierz rasę psa</option>
+    <option
+      *ngFor="let breed of breeds; index as i"
+      value="breed"
+      (click)="chooseBreed(breed)"
+    >
+      {{ breed }}
+    </option>
+  </select>
+</div>

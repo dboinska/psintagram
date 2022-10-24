@@ -1,0 +1,18 @@
+<h2 *ngIf="img">
+  Rasa: <span>{{ name }}</span>
+</h2>
+
+<div class="imgContainer">
+  <img alt="zdjęcie psa" src="{{ img ? img : '../../assets/paw.png' }}" />
+</div>
+
+<p *ngIf="img">
+  Przeczytaj więcej o tej rasie na Wikipedii:
+  <a
+    class="breedName"
+    target="_blank"
+    rel="noopener noreferrer"
+    href="https://en.wikipedia.org/wiki/{{ name }}"
+    >{{ name }}</a
+  >
+</p>
