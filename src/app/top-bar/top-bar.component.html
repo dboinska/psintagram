@@ -1,14 +1,12 @@
 <h1>Psintagram.</h1>
 
 <div class="select">
-  <select #breed>
+  <select #breed (change)="chooseBreed(breed.value)">
     <option value="none" selected disabled hidden>Wybierz rasę psa</option>
-    <option
-      *ngFor="let breed of breeds; index as i"
-      value="breed"
-      (click)="chooseBreed(breed)"
-    >
+    <option *ngFor="let breed of breeds; index as i" value="{{ breed }}">
       {{ breed }}
     </option>
   </select>
 </div>
+
+<!-- (pan)="panChooseBreed(breed)" -->
