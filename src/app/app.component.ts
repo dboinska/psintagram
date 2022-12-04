@@ -12,6 +12,7 @@ export class AppComponent implements OnInit {
   breeds: BreedList = [];
   choosenBreed: string = '';
   breedImg: string = '';
+  title="psintagram"
 
   addItem(breed: string) {
     this.choosenBreed = breed;
